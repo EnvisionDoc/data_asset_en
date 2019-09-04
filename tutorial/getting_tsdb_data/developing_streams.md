@@ -41,7 +41,7 @@ See the following example:
 
 .. image:: media/stream_config_1.png
 
-For more information about the *Time Window Aggregation* template, see [Time Window Aggregation Template](https://www.envisioniot.com/docs/data-asset/en/latest/learn/ai_template_overview.html).
+For more information about the *Time Window Aggregation* template, see [Time Window Aggregation Template](/docs/data-asset/en/latest/learn/ai_template_overview.html).
 
 ### Job for getting the difference between measuring points
 
@@ -60,7 +60,7 @@ See the following example:
 
 .. image:: media/stream_config_2.png
 
-For more information about the *Multi-Point Merging* template, see [Multi-Point Merging Template](https://www.envisioniot.com/docs/data-asset/en/latest/learn/multi_point_overview.html).
+For more information about the *Multi-Point Merging* template, see [Multi-Point Merging Template](/docs/data-asset/en/latest/learn/multi_point_overview.html).
 
 ## Starting data processing jobs
 

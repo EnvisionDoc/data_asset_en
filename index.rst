@@ -26,6 +26,7 @@
    quickstart/gettingstarted_storage_policy
    quickstart/gettingstarted_ai
    quickstart/gettingstarted_multi_point
+   quickstart/gettingstarted_quality_report
    quickstart/gettingstarted_subscribe_realtime
    quickstart/gettingstarted_subscribe_alerts
 
@@ -42,7 +43,7 @@
 
    howto/stream/index
    howto/storage/index
-   howto/quality/managing_data_quality
+   howto/quality/index
    howto/metadata/exploring_metadata
    howto/obtain/index
    howto/archive/index

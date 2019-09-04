@@ -1,4 +1,4 @@
-# Managing Data Quality
+# Viewing Data Quality Report
 By marking data with quality information tags, you can query the quality report of the data. The data quality reports provide data quality information in 3 dimensions: completeness, accuracy, and timeliness, helping you quickly understand the data quality of your assets.
 
 ## Prerequisites

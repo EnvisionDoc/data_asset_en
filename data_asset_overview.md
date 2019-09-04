@@ -62,8 +62,8 @@ Application developer, who develops applications to get the subscribed or stored
 
 ### Device Management
 
-EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device lifecycle, and map the physical asset structure to the digital world. [Learn more >>](https://www.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html)
+EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device lifecycle, and map the physical asset structure to the digital world. [Learn more >>](/docs/device-connection/en/latest/device_management_overview.html)
 
 ### Application Development
 
-Learn how to development your application with EnOS SDKs and access the stored data through EnOS APIs. [Learn more >>](https://www.envisioniot.com/docs/app-development/en/latest/app_dev_overview.html)
+Learn how to development your application with EnOS SDKs and access the stored data through EnOS APIs. [Learn more >>](/docs/app-development/en/latest/app_dev_overview.html)

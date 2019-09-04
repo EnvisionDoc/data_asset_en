@@ -37,9 +37,9 @@ The goal of this guide is to get the sum of the raw data ingesting points *testA
 | Measuring Point | testB_raw | testB_raw  | AI         | DOUBLE    |
 | Measuring Point | testC     | testC      | AI         | DOUBLE    |
 
-- Storage configuration: Configuring data storage policy for the 3 points (as either AI raw data or AI normalized data). For more information, see [Configuring TSDB Storage](https://www.envisioniot.com/docs/data-asset/en/latest/configuring_tsdb_storage.html).
+- Storage configuration: Configuring data storage policy for the 3 points (as either AI raw data or AI normalized data). For more information, see [Configuring TSDB Storage](/docs/data-asset/en/latest/configuring_tsdb_storage.html).
 
-- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](https://www.envisioniot.com/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html).
+- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html).
 
 ## Step 1. Develop a Multi-Point Data Processing Job
 

@@ -38,8 +38,8 @@ The goal of this guide is to get the maximum value of the *test_raw* input point
 
 .. note:: - In this example, *test_raw* is the input point, and *test_5min* is the output point.
    - Ensure that both the input point and the output point are of the same type.
-   - Storage configuration: Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see `Configuring TSDB Storage <https://www.envisioniot.com/docs/data-asset/en/latest/configuring_tsdb_storage.html>`__ .  
-   - Data ingestion: For information about data ingestion of input point *test_raw*, see `Device Connection <https://www.envisioniot.com/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html>`__ .
+   - Storage configuration: Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see `Configuring TSDB Storage </docs/data-asset/en/latest/configuring_tsdb_storage.html>`__ .  
+   - Data ingestion: For information about data ingestion of input point *test_raw*, see `Device Connection </docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html>`__ .
 
 
 ## Step 1. Develop a Data Processing Job
