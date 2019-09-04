@@ -56,3 +56,4 @@
    reference/statement_syntax
    reference/data_subscription_sdk
    reference/archive_storage
+   reference/streamsets/index

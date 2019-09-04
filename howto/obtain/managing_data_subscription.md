@@ -30,10 +30,10 @@ Take the following steps to create a data subscription job:
 
    .. note:: When a client revokes the data access authorization of a service account, the related subscription to the client's data will be stopped automatically.
 
-7. For the **Model Filter** and **Device Tags** sections, complete the data filtering configurations for real-time data subscription and alert data subscription separately:
+7. Complete the data filtering configurations for real-time data subscription and alert data subscription separately:
 
    - For **Real-time data** subscription: Filtering data by model and measuring points (subscribing to data of specific measuring points) and optionally by device tags (subscribing to data of specific devices).
-   - For **Alert data** subscription: Filtering data by models (subscribing to alert data of specific model) and optionally by device tags (subscribing to data of specific devices).
+   - For **Alert data** subscription: Filtering data by models (subscribing to alert data of specific model) and optionally by device tags or asset tree tags (subscribing to data of specific devices or asset trees).
 
 8. Click **Save** to save the data subscription configuration.
 

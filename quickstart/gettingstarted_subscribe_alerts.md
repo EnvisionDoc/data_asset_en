@@ -51,7 +51,7 @@ Log in EnOS Console and select the **Subscription Service** module. All the subs
 
 5. **Set model filter**: Select the model to be subscribed to. For this guide, select *testModel*. The subscription system will filter alert data to meet the specified condition.
 
-6. **Set device tag filter**: Specify tags of devices so that data of the selected devices will be subscribed to.
+6. （Optional）You can choose to set device tags or asset tree tags to filter the subscribed data, subscribing to alert data of the specified devices or asset trees only. 
 
 ## Step 2. Save and Enable the Subscription Topic
 

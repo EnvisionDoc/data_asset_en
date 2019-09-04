@@ -7,6 +7,7 @@ The general process of developing a stream processing job is as follows:
 2. Configure data processing policy
 3. Save and publish the stream processing job
 4. Run and maintain the stream processing job
+5. Developing a stream processing job with StreamSets operators
 
 
 .. toctree::
@@ -19,6 +20,7 @@ The general process of developing a stream processing job is as follows:
    configuring_pi_template
    publishing_job
    monitoring_job
+   streamsets
 
 
 .. toctree::
