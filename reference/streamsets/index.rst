@@ -5,7 +5,7 @@
    :depth: 1
    :hidden:
 
-Note: This is a preview version of the StreamSets operators. The operator reference documentation is in Chinese only.
+.. note:: This is a preview version of the StreamSets operators. The operator reference documentation is in Chinese only.
 
 EnOS Stream Analytics provides a set of underlying packaged StreamSets operators, supporting asset main data query, window aggregation, data filtering and interpolation, and electric energy calculation. Data engineers and application developers can use these StreamSets operators to design customized stream data processing jobs to meet the requirements of complex business scenarios.
 
