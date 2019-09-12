@@ -6,7 +6,7 @@ After the data subscription job starts running, you can use the data subscriptio
 
 Get the Maven dependency information of the data subscription SDK and add it to your development project. Detailed steps are as follows:
 
-1. Open the Maven repository of the SDK at <https://mvnrepository.com/artifact/com.envisioniot/enos-subscribe/2.2.0>.
+1. Open the Maven repository of the SDK at <https://mvnrepository.com/artifact/com.envisioniot/enos-subscribe>.
 
 2. Open your development environment, add the maven dependency for the SDK in your Java project. See the following example.
 
@@ -14,7 +14,7 @@ Get the Maven dependency information of the data subscription SDK and add it to 
    <dependency>
      <groupId>com.envisioniot</groupId>
      <artifactId>enos-subscribe</artifactId>
-     <version>2.2.0</version>
+     <version>2.3.0</version>
    </dependency>
    <dependency>
      <groupId>com.google.code.gson</groupId>
