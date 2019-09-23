@@ -18,7 +18,7 @@ Take the following steps to create a data subscription job:
    - **Real-time data**: Real-time telemetry of asset measuring points uploaded to the cloud with time stamp.
    - **Alert data**: Alert data are generated according to specific alert rules defined for real-time data.
 
-3. In the **ID** field, enter an ID for the subscription job or click **Generate** to use the system-generated ID.
+3. In the **ID** field, enter an ID for the subscription job or click **Generate** to use the system-generated ID. The subscription ID is a mandatory parameter for consuming subscribed data.
 
 4. From the **SA** drop down list, select the SA (service account) that is used for client and data authentication. Each subscription topic must has an associated SA. The system will detect the validity of the service account dynamically. When a service account is deleted, the data subscription configuration will be automatically disabled.
 
@@ -26,7 +26,7 @@ Take the following steps to create a data subscription job:
 
 5. In the **Description** field, enter a short description for the subscription job.
 
-6. For the **Customers** section, choose the clients whose data are to be subscribed to based on the data access permission of the selected SA (associated with purchased application).
+6. For the **Clients** section, choose the clients whose data are to be subscribed to based on the data access permission of the selected SA (associated with purchased application).
 
    .. note:: When a client revokes the data access authorization of a service account, the related subscription to the client's data will be stopped automatically.
 
