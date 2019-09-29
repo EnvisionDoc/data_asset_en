@@ -14,7 +14,7 @@ When assets are connected into the EnOS cloud, the asset raw data is ingested th
 
    - User-defined logic: you can design real-time data processing streams through the **Stream Development** function in the EnOS Console.
 
-     For more information about designing data processing jobs, see [Developing a Stream Processing Job](/docs/data-asset/en/latest/howto/stream/index.html).  
+     For more information about designing data processing jobs, see [Developing a Stream Processing Job](/docs/data-asset/en/2.0.8/howto/stream/index.html).  
 
    - System logic: the system built-in logic that completes operations like data format conversion.
 
@@ -40,7 +40,7 @@ See the following illustration of data flow in the storage layer:
 
 ## Application Layer
 
-You can subscribe to both the original data and the calculated data, so that the asset data can be consumed by your applications directly. The subscription settings can be configured through the **Data Subscription** function in the EnOS Console, and EnOS provides Java SDK for retrieving the subscribed data. For more information about data subscription, see [Developing Data Subscription Jobs](/docs/data-asset/en/latest/howto/obtain/managing_data_subscription.html).
+You can subscribe to both the original data and the calculated data, so that the asset data can be consumed by your applications directly. The subscription settings can be configured through the **Data Subscription** function in the EnOS Console, and EnOS provides Java SDK for retrieving the subscribed data. For more information about data subscription, see [Developing Data Subscription Jobs](/docs/data-asset/en/2.0.8/howto/obtain/managing_data_subscription.html).
 
 See the following illustration of data flow in the application layer:
 

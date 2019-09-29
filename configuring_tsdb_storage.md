@@ -105,6 +105,6 @@ The configuration of the **Generic Data** storage type is similar with that of t
 
 ## TSDB Storage Resources
 
-After configuring TSDB storage policies, you need to ensure that TSDB storage resources have been allocated for your organization. Otherwise, the configured storage policies will not take effect, and the device data will not be stored by default. To request TSDB storage resources, see [Managing Resources](/docs/enos/en/latest/resourcemanagement/getstarted.html).
+After configuring TSDB storage policies, you need to ensure that TSDB storage resources have been allocated for your organization. Otherwise, the configured storage policies will not take effect, and the device data will not be stored by default. To request TSDB storage resources, see [Managing Resources](/docs/enos/en/2.0.8/resourcemanagement/getstarted.html).
 
 <!--end-->

@@ -65,8 +65,8 @@ The procedure of EnOS Stream Analytics is as follows:
 
 ### Device Management Service
 
-EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device life cycle, and map the physical asset structure to the digital world. [Learn more >>](/docs/device-connection/en/latest/device_management_overview.html)
+EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device life cycle, and map the physical asset structure to the digital world. [Learn more >>](/docs/device-connection/en/2.0.8/device_management_overview.html)
 
 ### Data Asset Management
 
-EnOS™ Data Asset Management helps you properly manage the data that is ingested from the devices that are connected with EnOS Cloud. EnOS Data Asset Management enables you to subscribe to real-time and alert data, customize data storage policies, and retrieve stored data with APIs. [Learn more >>](/docs/data-asset/en/latest/data_asset_overview.html)
+EnOS™ Data Asset Management helps you properly manage the data that is ingested from the devices that are connected with EnOS Cloud. EnOS Data Asset Management enables you to subscribe to real-time and alert data, customize data storage policies, and retrieve stored data with APIs. [Learn more >>](/docs/data-asset/en/2.0.8/data_asset_overview.html)

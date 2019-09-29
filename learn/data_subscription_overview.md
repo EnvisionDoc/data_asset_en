@@ -1,4 +1,4 @@
-# Data Subscription Overview
+# Data Subscription
 
 EnOS Data Subscription function improves the API calling efficiency of applications with active data push, which supports subscription to real-time asset data, and asset alert data.
 
@@ -6,9 +6,9 @@ Benefiting from the data subscription service, applications do not need to call 
 
 ## Features
 
-**Multiple data source subscription**
+**Multiple data source subscription**:
 
-Data subscription service supports multiple data sources, including real-time asset data and asset alert data.
+Data subscription service supports multiple data sources such as real-time asset data, asset alert data, etc.
 
 **Visualized configuration**
 
@@ -18,13 +18,13 @@ A GUI is available for you to customize the data subscription configuration, suc
 
 Java SDK is provided for you to consume subscribed data in your applications.
 
-For detailed information about creating data subscription jobs, see [Developing Data Subscription Jobs](../howto/obtain/managing_data_subscription).
+For detailed information about creating data subscription jobs, see [Developing Data Subscription Jobs](/docs/data-asset/en/2.0.8/howto/obtain/managing_data_subscription.html).
 
 ## Advantages
 
-- Decoupling data production and data consumption, enabling traffic control of the consumer.
+- Decoupling data production and data consumption.
 - Rich set of data filtering conditions (organization, model, measuring point, and asset).
-- Cross-organization data subscription (through purchasing applications of other organizations).
-- Supporting "at-least-once" message delivery semantics, avoiding data loss.
-- Supporting consumer groups. A topic can be consumed by multiple consumers (2 consumers are supported currently) in a same group at the same time, improving data consumption efficiency in case of huge data volume.  A topic can also be consumed by multiple consumer groups.
-- Supporting resuming data consumption at breakpoint. Within 24 hours after the consumer client stops consuming data, the same consumer group can be used to continue consuming subscribed data from the breakpoint.
+- Cross-organization data subscription (through service account).
+- Supporting "at-least-once" message delivery semantics.
+- "Pulling subscribed data" consumption model, supporting traffic control of the consumer.
+- Supporting consumer groups (a topic can be consumed by multiple consumers repeatedly).

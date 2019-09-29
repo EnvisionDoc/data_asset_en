@@ -4,7 +4,7 @@ After the stream processing job is published online, you can manage the job thro
 
 ## Requesting Computing Resources
 
-Before starting the stream processing job, you need to check whether computing resources have been allocated for your organization. Otherwise, stream processing job cannot be started up. To request computing resources, see [Managing Resources](/docs/enos/en/latest/resourcemanagement/getstarted.html).
+Before starting the stream processing job, you need to check whether computing resources have been allocated for your organization. Otherwise, stream processing job cannot be started up. To request computing resources, see [Managing Resources](/docs/enos/en/2.0.8/resourcemanagement/getstarted.html).
 
 ## Previewing the Stream Processing Job
 

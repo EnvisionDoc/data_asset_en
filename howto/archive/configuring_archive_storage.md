@@ -21,9 +21,9 @@ Edit the basic information of the data archiving job if needed:
 Complete the data storage configuration, including configuring the storage resource, setting properties of the archived file, etc.
 
 1. Select **Resource Type** and specify the target storage system (BLOB or HDFS) for synchronizing the archived files.
-2. From the **Storage Resource** drop-down list, select the data source that has been registered through [Data Connection](/docs/offline-data/en/latest/data_source/index.html) or the HDFS storage that has been requested through [Resource Management](/docs/enos/en/latest/resourcemanagement/overview.html).
-3. Input the **Storage Path** where the archive files are located in the storage system and select the time partition format for the storage path root directory. The path must start and end with "/". For detailed information about time partition format, see [Storage Path Partition Parameters](/docs/data-asset/en/latest/reference/archive_storage#path).
-4. Select whether to generate the path by event time or by system time. For detailed description about how to generate directory by different time, see [Data Archiving Logic](/docs/data-asset/en/latest/reference/archive_storage#logic).
+2. From the **Storage Resource** drop-down list, select the data source that has been registered through [Data Connection](/docs/offline-data/en/2.0.8/data_source/index.html) or the HDFS storage that has been requested through [Resource Management](/docs/enos/en/2.0.8/resourcemanagement/overview.html).
+3. Input the **Storage Path** where the archive files are located in the storage system and select the time partition format for the storage path root directory. The path must start and end with "/". For detailed information about time partition format, see [Storage Path Partition Parameters](/docs/data-asset/en/2.0.8/reference/archive_storage#path).
+4. Select whether to generate the path by event time or by system time. For detailed description about how to generate directory by different time, see [Data Archiving Logic](/docs/data-asset/en/2.0.8/reference/archive_storage#logic).
 5. Input the **File Name** of the archived file, where upper cases, lower cases, numbers, and hyphens are supported, with a length limit of 50 characters. Once a file is generated, the system will append a time stamp suffix "_UTC" after the file name. When "Generate path by event time" is selected, the time stamp suffix is UTC+0 corresponding to the data event time; when "Generate path by system time" is selected, the time stamp suffix is UTC+0 corresponding to the system time.
 6. Select **File Type**, where only TEXTFILE format (.csv) is supported currently.
 7. Select the **Encoding** for archived file, where the default format is UTF-8.
@@ -53,6 +53,6 @@ After completing the above configuration, click **OK** to submit the data archiv
 
 When the data archiving job is submitted, the system starts reading data from the specified message channel. If the current data archiving job is not completed in the current archiving cycle, it will restart immediately per the newly-submitted configuration. Archived files will not be impacted. Data of the added models will also be archived immediately when the arching job is submitted.
 
-For more information about how archived files are generated, see [Generation of Archived Files](/docs/data-asset/en/latest/reference/archive_storage#file).
+For more information about how archived files are generated, see [Generation of Archived Files](/docs/data-asset/en/2.0.8/reference/archive_storage#file).
 
 <!--end-->

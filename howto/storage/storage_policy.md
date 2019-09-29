@@ -18,7 +18,7 @@ TSDB can store data that is ingested from connected devices and that is integrat
 
 **Customized storage time**
 
-Data storage time can be customized based on your business needs (1 month, 3 months, 6 months, 1 year, and several years). The storage time starts from the moment when data is stored in the specific database. Expired data will be deleted automatically. For example, if *1 year* is selected for the storage time, the database only retains data imported in the last 1 year.
+Data storage time can be customized based on your business needs (1 month, 3 months, 6 months, 1 year, and several years).
 
 **Getting data with API**
 

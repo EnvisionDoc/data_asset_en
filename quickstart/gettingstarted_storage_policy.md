@@ -21,7 +21,7 @@ Model configuration: Detailed information about the (*test_Model*) used for this
 |:--------------|:---------|:-----------|:-----------|:----------|
 | Measuring Point | test_raw | test_raw   | AI         | DOUBLE    |
 
-For instructions on creating and configuring models, see [Creating a Model](/docs/device-connection/en/latest/howto/model/creating_model.html).
+For instructions on creating and configuring models, see [Creating a Model](/docs/device-connection/en/2.0.8/howto/model/creating_model.html).
 
 ## Procedure
 

@@ -53,7 +53,7 @@ EnOS provides a template for designing StreamSets pipelines. You can import the 
 
    .. image:: ../../media/streamsets_validation.png
 
-For more information about designing StreamSets pipelines, see [StreamSets User Guide](https://streamsets.com/documentation/controlhub/latest/help/controlhub/UserGuide/PipelineDesign/PipelineDesign.html).
+For more information about designing StreamSets pipelines, see [StreamSets User Guide](https://streamsets.com/documentation/controlhub/2.0.8/help/controlhub/UserGuide/PipelineDesign/PipelineDesign.html).
 
 ## Previewing and Running the Pipeline
 
