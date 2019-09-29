@@ -6,7 +6,7 @@ When storage policies are configured for the data of the smart electric meter, a
 
 In this tutorial, get the Maven dependency information of the API Core SDK for Java from the Maven repository and add it to your development project. Detailed steps are as follows:
 
-1. Open the Maven repository of the SDK at https://mvnrepository.com/artifact/com.envisioniot/apim-poseidon/0.1.7.
+1. Open the Maven repository of the SDK at https://mvnrepository.com/artifact/com.envisioniot/apim-poseidon.
 
 2. Open the development environment and include the maven dependency for the SDK in your Java project. See the following example.
 
@@ -14,7 +14,7 @@ In this tutorial, get the Maven dependency information of the API Core SDK for J
    <dependency>
        <groupId>com.envisioniot</groupId>
        <artifactId>apim-poseidon</artifactId>
-       <version>0.1.7</version>
+       <version>0.1.8</version>
    </dependency>
    ```
 

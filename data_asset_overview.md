@@ -14,7 +14,7 @@ EnOS Data Asset Management offering targets to help you optimize your total cost
 
 ## Stream Analytics
 
-The essence of stream analytics is to ensure low-latency of stream data transmission and processing, as well as high accuracy of data analytics. To achieve these goals, EnOS Stream Analytics not only provides high throughput, low latency stream processing, but also accumulated the leading and most frequently used stream processing algorithms for certain industries. The service provides visualized template-based configuration to help you quickly perform your stream analytics tasks and task monitoring. Besides, EnOS Stream Analytics also provides a set of underlying packaged StreamSets operators for developers to develop customized stream data processing jobs to meet the requirements of various business scenarios. For more information, see overview of [Stream Analytics](learn/index.html).
+The essence of stream analytics is to ensure low-latency of stream data transmission and processing, as well as high accuracy of data analytics. To achieve these goals, EnOS Stream Analytics not only provides high throughput, low latency stream processing, but also accumulated the leading and most frequently used stream processing algorithms for certain industries. The service provides visualized template-based configuration to help you quickly perform your stream analytics tasks and task monitoring. Besides, EnOS Stream Analytics also provides a set of underlying packaged StreamSets operators for developers to develop customized stream data processing jobs to meet the requirements of various business scenarios. For more information, see overview of [Stream Analytics](learn/streaming_overview).
 
 ## Time Series Data Management
 
@@ -22,7 +22,7 @@ EnOS TSDB provides efficient and stable storage and management for time series d
 
 With the Data Insights feature, you can view the latest data ingested from your devices and also generate a chart for time series data that is stored in TSDB by selecting a specific time range and device measuring points, thus improve the efficiency of data analysis. 
 
-With the Data Cleanup feature, you can delete historical data (wrong data, informal data, or useless business data) that is stored in TSDB for releasing storage resource and saving data storage costs. For more information, see [Managing Time Series Data](howto/storage/index.html).
+With the Data Cleanup feature, you can delete historical data (wrong data, informal data, or useless business data) that is stored in TSDB for releasing storage resource and saving data storage costs. For more information, see [Managing Time Series Data](howto/storage/index).
 
 Note: Data storage policy must be configured before the devices start uploading data to EnOS Cloud. Otherwise, the uploaded device data will not be stored in EnOS TSDB by default.
 
@@ -62,8 +62,8 @@ Application developer, who develops applications to get the subscribed or stored
 
 ### Device Management
 
-EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device lifecycle, and map the physical asset structure to the digital world. [Learn more >>](/docs/device-connection/en/latest/device_management_overview.html)
+EnOS Device Management helps you quickly and securely connect physical devices to EnOS Cloud and start to transfer data, manage device lifecycle, and map the physical asset structure to the digital world. [Learn more >>](/docs/device-connection/en/2.0.9/device_management_overview.html)
 
 ### Application Development
 
-Learn how to development your application with EnOS SDKs and access the stored data through EnOS APIs. [Learn more >>](/docs/app-development/en/latest/app_dev_overview.html)
+Learn how to development your application with EnOS SDKs and access the stored data through EnOS APIs. [Learn more >>](/docs/app-development/en/2.0.9/app_dev_overview.html)

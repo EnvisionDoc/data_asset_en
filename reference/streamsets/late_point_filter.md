@@ -14,24 +14,49 @@
 
 ### General
 
-| 名称            | 是否必须 | 描述                                                         |
-| :-------------- | :------- | :----------------------------------------------------------- |
-| Name            | Yes      | 算子名称                                                     |
-| Description     | No       | 算子描述                                                     |
-| Stage Library   | Yes      | 算子所属的库                                                 |
-| Required Fields | No       | 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉   |
-| Preconditions   | No       | 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉 |
-| On Record Error | Yes      | 对错误数据的处理方式：<br/>Discard：直接丢弃 <br/>Send to Error：发送至错误中心 <br/>Stop Pipeline：停止流任务运行 |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Name
+     - Yes
+     - 算子名称
+   * - Description
+     - No
+     - 算子描述
+   * - Stage Library
+     - Yes
+     - 算子所属的库
+   * - Required Fields
+     - No
+     - 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉
+   * - Preconditions
+     - No
+     - 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉
+   * - On Record Error
+     - Yes
+     - 对错误数据的处理方式  Discard:直接丢弃；Send to Error：发送至错误中心；Stop Pipeline：停止流任务运行
 
 ### LatePointFilter
 
-| 名称                 | 是否必须 | 描述                                                         |
-| :------------------- | :------- | :----------------------------------------------------------- |
-| Filter Rules         | Yes      | 设置对Record的过滤规则                                       |
-| Input Model::Point   | Yes      | 数据输入点，格式为：{模型标识}::{测点标识}。同一行的输入点和输出点之间的modelId必须相同，pointId必须不同。 |
-| Output Model::Point  | Yes      | 数据输出点，格式为：{模型标识}::{测点标识}。同一行的输入点和输出点之间的modelId必须相同，pointId必须不同。 |
-| QualityControl Level | No       | 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。 |
+.. list-table::
 
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Filter Rules
+     - Yes
+     - 设置对Record的过滤规则
+   * - Input Model::Point
+     - Yes
+     - 数据输入点，格式为：{模型标识}::{测点标识}。同一行的输入点和输出点之间的modelId必须相同，pointId必须不同。
+   * - Output Model::Point
+     - Yes
+     - 数据输出点，格式为：{模型标识}::{测点标识}。同一行的输入点和输出点之间的modelId必须相同，pointId必须不同。
+   * - QualityControl Level
+     - No
+     - 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。
 
 
 ## 输出结果
@@ -47,3 +72,5 @@
 **迟到点**
 
 .. image:: media/late_point_filter_result_2.png
+
+<!--end-->

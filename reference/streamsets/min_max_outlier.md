@@ -16,45 +16,94 @@
 
 ### General
 
-| 名称            | 是否必须 | 描述                                                         |
-| :-------------- | :------- | :----------------------------------------------------------- |
-| Name            | Yes      | 算子名称                                                     |
-| Description     | No       | 算子描述                                                     |
-| Required Fields | No       | 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉   |
-| Preconditions   | No       | 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉 |
-| On Record Error | Yes      | 对错误数据的处理方式：<br/>Discard：直接丢弃 <br/>Send to Error：发送至错误中心 <br/>Stop Pipeline：停止流任务运行 |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Name
+     - Yes
+     - 算子名称
+   * - Description
+     - No
+     - 算子描述
+   * - Stage Library
+     - Yes
+     - 算子所属的库
+   * - Required Fields
+     - No
+     - 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉
+   * - Preconditions
+     - No
+     - 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉
+   * - On Record Error
+     - Yes
+     - 对错误数据的处理方式  Discard:直接丢弃；Send to Error：发送至错误中心；Stop Pipeline：停止流任务运行
+
 
 ### BasicConfig
 
-| 名称                 | 是否必须 | 描述                                                         |
-| :------------------- | :------- | :----------------------------------------------------------- |
-| QualityControl Level | No       | 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。 |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - QualityControl Level
+     - No
+     - 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。
 
 ### OutlierConfig
 
-| 名称           | 是否必须 | 描述                                                         |
-| :------------- | :------- | :----------------------------------------------------------- |
-| Rules          | Yes      | 策略集合，可对策略进行增、删、改等操作                       |
-| Model Point    | Yes      | 数据输入点，格式为：{模型标识}::{测点标识}                   |
-| OpenClose      | Yes      | 输入点阈值区间格式，包括（x,y）、（x,y]、[x,y）、[x,y]、（-∞,x）、（-∞,x]、（x,+∞）、[x,+∞）这8个选项 |
-| Min-Max        | Yes      | 具体阈值区间参数取值，有2个参数时，需用逗号进行分隔，比如(x,y)选项的取值为"2,10"，则表示为实际阈值区间为（2,10） |
-| Output PointId | Yes      | 数据输出点，格式为：{模型标识}::{测点标识}。当对输入点进行阈值判断后，Streaming会为超出了上下限的record打上越限标签，并输出打标结果，数据输出点是承载输出结果的测点 |
+.. list-table::
 
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Rules
+     - Yes
+     - 策略集合，可对策略进行增、删、改等操作
+   * - Model Point
+     - Yes
+     - 数据输入点，格式为：{模型标识}::{测点标识}
+   * - OpenClose
+     - Yes
+     - 输入点阈值区间格式，包括（x,y）、（x,y]、[x,y）、[x,y]、（-∞,x）、（-∞,x]、（x,+∞）、[x,+∞）这8个选项
+   * - Min-Max
+     - Yes
+     - 具体阈值区间参数取值，有2个参数时，需用逗号进行分隔，比如(x,y)选项的取值为"2,10"，则表示为实际阈值区间为（2,10）
+   * - Output PointId
+     - Yes
+     - 数据输出点，格式为：{模型标识}::{测点标识}。当对输入点进行阈值判断后，Streaming会为超出了上下限的record打上越限标签，并输出打标结果，数据输出点是承载输出结果的测点
 
 
 ## 输出结果
 
 该算子的输出结果包含在Attribute结构体中，各字段的描述如下：
 
-| 名称            | 数据类型         | 描述                 |
-| :-------------- | :--------------- | :------------------- |
-| isOutlier       | Boolean          |                      |
-| minValue        | Int/Double/Float | 设置的阈值范围最小值 |
-| maxValue        | Int/Double/Float | 设置的阈值范围最小值 |
-| enableMinJudger | Boolean          | 是否开启最小值判断   |
-| enableMaxJudger | Boolean          | 是否开启最大值判断   |
+.. list-table::
+
+   * - 名称
+     - 数据类型
+     - 描述
+   * - isOutlier
+     - Boolean
+     - \
+   * - minValue
+     - Int/Double/Float
+     - 设置的阈值范围最小值
+   * - maxValue
+     - Int/Double/Float
+     - 设置的阈值范围最小值
+   * - enableMinJudger
+     - Boolean
+     - 是否开启最小值判断
+   * - enableMaxJudger
+     - Boolean
+     - 是否开启最大值判断
 
 
 ### 输出示例
 
 .. image:: media/minmax_outlier_result.png
+
+<!--end-->

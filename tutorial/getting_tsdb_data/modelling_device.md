@@ -9,7 +9,11 @@ Create a model for the electric meter with the following basic settings:
 - **Source Model**: NA
 - **Description**: Model for electric meter
 
+
+
 Define the measuring points for the model:
+
+
 
 .. list-table::
    :widths: auto
@@ -40,9 +44,13 @@ Define the measuring points for the model:
      - AI
      - Difference between the maximum data and minimum data
 
+
+
 See the following example:
 
 .. image:: media/measure_points.png
+
+
 
 ## Next Unit
 

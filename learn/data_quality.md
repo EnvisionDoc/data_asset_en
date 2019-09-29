@@ -1,4 +1,4 @@
-# Data Quality
+# Data Quality Overview
 Data has become a new type of important asset that Internet enterprises rely on. Data quality is directly related to the accuracy of information and also the survival and competitiveness of an enterprise.
 
 Data quality management refers to a set of processing guidelines for measuring, improving, and verifying data quality as well as integrating organizational data. The IoT data is featured by large volume, high speed, and diversity so that the data processing required to ensure the quality of IoT big data is different from the quality management ways as stated in the traditional data management plans.

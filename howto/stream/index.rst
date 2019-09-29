@@ -1,32 +1,27 @@
-﻿Developing Stream Processing Jobs
+﻿Stream Data Processing
 ===================================
 
-The general process of developing a stream processing job is as follows:
+EnOS Stream Analytics targets to meet the real-time data processing requirements of devices and assets, and also the requirements of processing data that is integrated from the offline message channel. 
 
-1. Create a stream processing job
-2. Configure data processing policy
-3. Save and publish the stream processing job
-4. Run and maintain the stream processing job
-5. Developing a stream processing job with StreamSets operators
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Overview
+
+   ../../learn/streaming_overview
 
 
 .. toctree::
    :maxdepth: 1
    :caption: How-to's
 
-   creating_job
-   configuring_ai_template
-   configuring_multi_point_template
-   configuring_pi_template
-   publishing_job
-   monitoring_job
+   dev
    streamsets
+   ops
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Reference
 
-   ../../reference/time_window
-   ../../reference/statement_syntax
-   ../../reference/power_calculation_logic
+   reference

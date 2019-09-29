@@ -36,6 +36,7 @@ Automatic detection and completion of variables in the logic expression is enabl
 .. image:: ../media/autocomplete.gif
 
 ## Expression Example
+
 ```scala
 if(${turbine::wind_speed} > 50) {
     ${turbine::power}+10
