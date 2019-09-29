@@ -1,4 +1,4 @@
-# Configuring Data Storage
+# Getting Started: Configuring Data Storage
 
 This guide introduces how to quickly configure TSDB data storage and retrieve the stored data with EnOS Open APIs.
 
@@ -17,11 +17,20 @@ The goal of this guide is to store the AI type raw data of the *test_raw* measur
 
 Model configuration: Detailed information about the (*test_Model*) used for this guide is as follows:
 
-| Feature Type  | Name     | Identifier | Point Type | Data Type |
-|:--------------|:---------|:-----------|:-----------|:----------|
-| Measuring Point | test_raw | test_raw   | AI         | DOUBLE    |
+.. list-table::
 
-For instructions on creating and configuring models, see [Creating a Model](/docs/device-connection/en/latest/howto/model/creating_model.html).
+   * - Feature Type
+     - Name
+     - Identifier
+     - Point Type
+     - Data Type
+   * - Measuring Point
+     - test_raw
+     - test_raw
+     - AI
+     - DOUBLE
+
+For instructions on creating and configuring models, see [Creating a Model](/docs/device-connection/en/2.0.9/howto/model/creating_model.html).
 
 ## Procedure
 

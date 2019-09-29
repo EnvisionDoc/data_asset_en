@@ -1,4 +1,4 @@
-# Processing Multi-Point Data
+# Getting Started: Processing Multi-Point Data
 
 This guide intends to help you learn how to process data of multiple measuring points with the Multi-Point Aggregation template.
 
@@ -31,15 +31,33 @@ The goal of this guide is to get the sum of the raw data ingesting points *testA
 
 - Model configuration: Detailed information about the *testModel* used for this guide is as follows:
 
-| Feature Type  | Name      | Identifier | Point Type | Data Type |
-|:--------------|:----------|:-----------|:-----------|:----------|
-| Measuring Point | testA_raw | testA_raw  | AI         | DOUBLE    |
-| Measuring Point | testB_raw | testB_raw  | AI         | DOUBLE    |
-| Measuring Point | testC     | testC      | AI         | DOUBLE    |
+.. list-table::
 
-- Storage configuration: Configuring data storage policy for the 3 points (as either AI raw data or AI normalized data). For more information, see [Configuring TSDB Storage](/docs/data-asset/en/latest/configuring_tsdb_storage.html).
+   * - Feature Type
+     - Name
+     - Identifier
+     - Point Type
+     - Data Type
+   * - Measuring Point
+     - testA_raw
+     - testA_raw
+     - AI
+     - DOUBLE
+   * - Measuring Point
+     - testB_raw
+     - testB_raw
+     - AI
+     - DOUBLE
+   * - Measuring Point
+     - testC
+     - testC
+     - AI
+     - DOUBLE
 
-- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html).
+
+- Storage configuration: Configuring data storage policy for the 3 points (as either AI raw data or AI normalized data). For more information, see [Configuring TSDB Storage](../configuring_tsdb_storage).
+
+- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](/docs/device-connection/en/2.0.9/quickstart/gettingstarted_device_connection.html).
 
 ## Step 1. Develop a Multi-Point Data Processing Job
 

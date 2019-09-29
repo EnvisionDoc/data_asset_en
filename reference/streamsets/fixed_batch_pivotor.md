@@ -19,52 +19,106 @@
 
 ### General
 
-| 名称            | 是否必须 | 描述                                                           |
-|:----------------|:---------|:---------------------------------------------------------------|
-| Name            | Yes      | 算子名称                                                       |
-| Description     | No       | 算子描述                                                       |
-| Required Fields | No       | 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉     |
-| Preconditions   | No       | 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉 |
-| On Record Error | Yes      | 对错误数据的处理方式：<br/>Discard：直接丢弃                   |
-Send to Error：发送至错误中心
-Stop Pipeline：停止流任务运行 |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Name
+     - Yes
+     - 算子名称
+   * - Description
+     - No
+     - 算子描述
+   * - Stage Library
+     - Yes
+     - 算子所属的库
+   * - Required Fields
+     - No
+     - 数据必须包含的字段，如果未包含指定字段，则record将被过滤掉
+   * - Preconditions
+     - No
+     - 数据必须满足的前提条件，如果不满足指定条件，则record将被过滤掉
+   * - On Record Error
+     - Yes
+     - 对错误数据的处理方式  Discard:直接丢弃；Send to Error：发送至错误中心；Stop Pipeline：停止流任务运行
+
 ### BasicConfig
 
-| 名称                 | 是否必须 | 描述                                                             |
-|:---------------------|:---------|:-----------------------------------------------------------------|
-| Points               | Yes      | 数据输入点，格式为：{模型标识}::{测点标识}                       |
-| Output PointId       | Yes      | 数据输出点，格式为：{模型标识}::{测点标识}                       |
-| QualityControl Level | No       | 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。 |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Points
+     - Yes
+     - 数据输入点，格式为：{模型标识}::{测点标识}
+   * - Output PointId
+     - Yes
+     - 数据输出点，格式为：{模型标识}::{测点标识}
+   * - QualityControl Level
+     - No
+     - 数据质量位选择，表示该算子可以支持或需要处理哪些类型的数据质量。
+
 
 ### GroupKeyConfig
 
-| 名称                      | 是否必须 | 描述                                                                         |
-|:--------------------------|:---------|:-----------------------------------------------------------------------------|
-| Group-Key Generate Method | Yes      | 选择生成分组标签(key)的方式，可选byField，byELExpress，或byFieldAndELExpress |
-| Fields.HowToTag           | Yes      | 定义具体生成字段，可选FieldAsKey或InputAsKey                                 |
-| Fields.FieldTag           | No       | 当选择FieldAsKey时，输入FieldTag                                             |
-| Fields.InputTag           | No       | 当选择InputAsKey时，输入InputTag                                             |
+.. list-table::
+
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Group-Key Generate Method
+     - Yes
+     - 选择生成分组标签(key)的方式，可选byField，byELExpress，或byFieldAndELExpress
+   * - Fields.HowToTag
+     - Yes
+     - 定义具体生成字段，可选FieldAsKey或InputAsKey
+   * - Fields.FieldTag
+     - No
+     - 当选择FieldAsKey时，输入FieldTag
+   * - Fields.InputTag
+     - No
+     - 当选择InputAsKey时，输入InputTag
 
 ### CacheConfig
 
-| 名称                         | 是否必须 | 描述                                                                                                      |
-|:-----------------------------|:---------|:----------------------------------------------------------------------------------------------------------|
-| Enable CacheTag              | No       | 选择是否开启缓存，实现跨批同标签聚合                                                                      |
-| FixedBatchNumber             | No       | 开启跨批聚合时，选择跨批聚合的批次数量。如选择CustomBatchNum，则在Batch Count一栏中输入自定义的批次数量。 |
-| Enable AheadOutput           | No       | 选择是否开启提前输出。开启时，即使标签未达到指定的FixedBatchNumber批次数量，也会输出。                    |
-| Trigger Number By Expression | No       | 开启提前输出时，输入触发提前输出的批次数量                                                                |
-| Enable OutputDistinct        | No       | 选择是否开启跨批去重。开启时，同一标签最多输出一次                                                        |
-| ExpireRule                   | No       | 选择缓存数据失效的时间                                                                                    |
+.. list-table::
 
-
+   * - 名称
+     - 是否必须
+     - 描述
+   * - Enable CacheTag
+     - No
+     - 选择是否开启缓存，实现跨批同标签聚合
+   * - FixedBatchNumber
+     - No
+     - 开启跨批聚合时，选择跨批聚合的批次数量。如选择CustomBatchNum，则在Batch Count一栏中输入自定义的批次数量。
+   * - Enable AheadOutput
+     - No
+     - 选择是否开启提前输出。开启时，即使标签未达到指定的FixedBatchNumber批次数量，也会输出。
+   * - Trigger Number By Expression
+     - No
+     - 开启提前输出时，输入触发提前输出的批次数量
+   * - Enable OutputDistinct
+     - No
+     - 选择是否开启跨批去重。开启时，同一标签最多输出一次
+   * - ExpireRule
+     - No
+     - 选择缓存数据失效的时间
 
 ## 输出结果
 
 该算子的输出结果包含在Attribute结构体中，各字段的描述如下：
 
-| 名称       | 数据类型 | 描述                   |
-| :--------- | :------- | :--------------------- |
-| fixedBatch | Map      | 具有相同标签的记录集合 |
+.. list-table::
+
+   * - 名称
+     - 数据类型
+     - 描述
+   * - fixedBatch
+     - Map
+     - 具有相同标签的记录集合
 
 
 ### 输出示例

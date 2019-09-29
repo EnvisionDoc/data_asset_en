@@ -26,22 +26,42 @@ In this step, use the *Time Window Aggregation* template to create a data proces
 
 Complete the following configuration for the stream data processing job:
 
-| Field           | Value                             | Description                                                  |
-| --------------- | --------------------------------- | ------------------------------------------------------------ |
-| Window Type     | Tumbling Window                   | The time window for processing data, which has a fixed size and does not overlap. |
-| Latency Setting | 1 day                             | The allowed lateness for data arriving late. *0 second* indicates that data arriving late will be ignored. |
-| Input Point     | Reading                           | The measuring point providing raw data.                        |
-| Threshold       | [0, 100)                          | The threshold filtering valid data value.                    |
-| Interpolation   | Ignore                            | Interpolation algorithm that is used to process the input data that exceeds the threshold. |
-| Aggregation     | max / min                         | Get the maximum / minimum value of the meter reading data.   |
-| Window Size     | 10 minutes                        | The size of each time window for processing data.            |
-| Output Point    | MaxReading10Min / MinReading10Min | The measuring points receiving the processed data.             |
+.. list-table::
+   :widths: 20 20 60
+
+   * - Field
+     - Value
+     - Description
+   * - Window Type
+     - Tumbling Window
+     - The time window for processing data, which has a fixed size and does not overlap.
+   * - Latency Setting
+     - 1 day
+     - The allowed lateness for data arriving late. *0 second* indicates that data arriving late will be ignored.
+   * - Input Point
+     - Reading
+     - The measuring point providing raw data.
+   * - Threshold
+     - [0, 100)
+     - The threshold filtering valid data value.
+   * - Interpolation
+     - Ignore
+     - Interpolation algorithm that is used to process the input data that exceeds the threshold.
+   * - Aggregation
+     - max / min
+     - Get the maximum / minimum value of the meter reading data.
+   * - Window Size
+     - 10 minutes
+     - The size of each time window for processing data.
+   * - Output Point
+     - MaxReading10Min / MinReading10Min
+     - The measuring points receiving the processed data.
 
 See the following example:
 
 .. image:: media/stream_config_1.png
 
-For more information about the *Time Window Aggregation* template, see [Time Window Aggregation Template](/docs/data-asset/en/latest/learn/ai_template_overview.html).
+For more information about the *Time Window Aggregation* template, see [Time Window Aggregation Template](../../learn/ai_template_overview).
 
 ### Job for getting the difference between measuring points
 
@@ -49,18 +69,31 @@ In this step, use the *Multi-Point Merging* template to create a data processing
 
 Complete the following configuration for the stream data processing job:
 
-| Field                | Value                                                        | Description                                                  |
-| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Triggering Mode      | Frequency                                                    | The data processing job is triggered by the specified frequency. |
-| Triggering Frequency | 10 minutes                                                   | The data processing job will run every 10 minutes.           |
-| Output Point         | ReadingDifference                                            | The measuring point receiving the processed data.              |
-| Output Logic         | `${ElectricMeter::MaxReading10Min} - ${ElectricMeter::MinReading10Min}` | The expression for getting the difference between the values of the 2 measuring points. |
+.. list-table::
+   :widths: 20 20 60
+
+   * - Field
+     - Value
+     - Description
+   * - Triggering Mode
+     - Frequency
+     - The data processing job is triggered by the specified frequency.
+   * - Triggering Frequency
+     - 10 minutes
+     - The data processing job will run every 10 minutes.
+   * - Output Point
+     - ReadingDifference
+     - The measuring point receiving the processed data.
+   * - Output Logic
+     - ``${ElectricMeter::MaxReading10Min} - ${ElectricMeter::MinReading10Min}``
+     - The expression for getting the difference between the values of the 2 measuring points.
+
 
 See the following example:
 
 .. image:: media/stream_config_2.png
 
-For more information about the *Multi-Point Merging* template, see [Multi-Point Merging Template](/docs/data-asset/en/latest/learn/multi_point_overview.html).
+For more information about the *Multi-Point Merging* template, see [Multi-Point Merging Template](../../learn/multi_point_overview.html).
 
 ## Starting data processing jobs
 

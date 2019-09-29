@@ -1,4 +1,4 @@
-# Data Asset Explorer
+# Data Asset Explorer Overview
 The metadata, also known as mediation data and relay data, is the data about data. Metadata is often used to describe objects such as information resources and data, and to provide structured data about the information related to certain resources. The scenarios of exploring asset metadata include identifying resources, evaluating resources, tracking changes of resources in its usage, managing a large volume of networked data efficiently, and achieving effective discovery, query, integration, and effective management of resources.
 
 ## Features

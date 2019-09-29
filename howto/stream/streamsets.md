@@ -23,7 +23,7 @@ A data processing pipeline usually consists of multiple stages that are connecte
 
 EnOS provides a template for designing StreamSets pipelines. You can import the pipeline configuration template the design a data processing pipeline quickly:
 
-1. [Download the StreamSets pipeline configuration template](../../_static/StreamsetsPipelineDemo.json) and save the `StreamsetsPipelineDemo.json` file to a local directory.
+1. [Download the StreamSets pipeline configuration template](../../_static/streamsets_pipeline_demo.json) and save the `streamsets_pipeline_demo.json` file to a local directory.
 
 2. Log in EnOS Console, select **Stream Data Processing > StreamSets**, click the triangle beside the **Create New Pipeline** button, and select **Import Pipeline**.
 
@@ -53,7 +53,7 @@ EnOS provides a template for designing StreamSets pipelines. You can import the 
 
    .. image:: ../../media/streamsets_validation.png
 
-For more information about designing StreamSets pipelines, see [StreamSets User Guide](https://streamsets.com/documentation/controlhub/latest/help/controlhub/UserGuide/PipelineDesign/PipelineDesign.html).
+For more information about designing StreamSets pipelines, see [StreamSets User Guide](https://streamsets.com/documentation/controlhub/2.0.9/help/controlhub/UserGuide/PipelineDesign/PipelineDesign.html).
 
 ## Previewing and Running the Pipeline
 

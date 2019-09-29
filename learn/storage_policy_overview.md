@@ -1,4 +1,4 @@
-# Storage Policy
+# Storage Policy Overview
 
 With the Storage Policy service, EnOS provides a variety of data storage options based on your data storage and data reading requirements. Data is stored by categories (data types and storage time), thus reducing data storage costs and enhancing data reading efficiency.
 

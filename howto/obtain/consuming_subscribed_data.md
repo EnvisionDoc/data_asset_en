@@ -123,4 +123,18 @@ public class AlertServiceDemo1 {
 }
 ```
 
+## Monitoring Running Statistics of Data Subscription Jobs
+
+When a huge volume of data is being subscribed to, you can check the running statistics of the data subscription job to ensure that the subscribed data is consumed in time.
+
+1. Log in EnOS Console and open the Data Subscription page. From the **Operations** column of the data subscription job list, select **More > Running Statistics**. 
+
+2. In the pop-up window, view the producer rates and consumer rates of the data subscription job, and see whether there is any delay of data consumption (by comparing the data producer rates with the data consumer rates).
+
+   .. image:: ../../media/subscription_statistics.png
+
+   .. note:: In the above example, *Producer Rates* shows the speed of data production from the real-time data channel, and *Consumer Rates* shows the speed of data consumption by each consumer group. The *offset* line and number indicate the total volume of subscribed data by the subscription job. The consumer group lines and number indicate the volume of subscribed data that has not been consumed by the consumer group.
+
+If there is delay of data consumption, you can run 2 consumer clients of the same consumer group to improve the data consumption efficiency.
+
 <!--end-->

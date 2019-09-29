@@ -26,5 +26,6 @@ For detailed information about creating data subscription jobs, see [Developing 
 - Rich set of data filtering conditions (organization, model, measuring point, and asset).
 - Cross-organization data subscription (through purchasing applications of other organizations).
 - Supporting "at-least-once" message delivery semantics, avoiding data loss.
+- Monitoring the running statistics of data subscription jobs (producer rates, consumer rates, offset, and lag) to ensure that subscribed data is consumed in time without delay.
 - Supporting consumer groups. A topic can be consumed by multiple consumers (2 consumers are supported currently) in a same group at the same time, improving data consumption efficiency in case of huge data volume.  A topic can also be consumed by multiple consumer groups.
 - Supporting resuming data consumption at breakpoint. Within 24 hours after the consumer client stops consuming data, the same consumer group can be used to continue consuming subscribed data from the breakpoint.
