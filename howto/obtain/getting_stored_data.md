@@ -51,7 +51,7 @@ EnOS provides an API SDK to help you calling the EnOS service APIs and developin
 
 Optionally, you can download the source code of the EnOS API SDK from [GitHub](https://github.com/EnvisionIot/enos-api-sdk-java) and install it in your development environment.
 
-For more information about how to work with EnOS SDK, see [Getting Started with EnOS SDKs](/docs/app-development/en/2.0.9/gettingstarted_sdk.html).
+For more information about how to work with EnOS SDK, see [Getting Started with EnOS SDKs](/docs/app-development/en/latest/gettingstarted_sdk.html).
 
 ## Code Sample
 
@@ -122,6 +122,6 @@ The reference documentation for each API can be found through **EnOS API** > **A
 
 .. image:: ../../media/api_doc.png
 
-For more information about how to use EnOS API, see [Getting Started with EnOS REST APIs](/docs/app-development/en/2.0.9/gettingstarted_api.html).
+For more information about how to use EnOS API, see [Getting Started with EnOS REST APIs](/docs/app-development/en/latest/gettingstarted_api.html).
 
 <!--end-->

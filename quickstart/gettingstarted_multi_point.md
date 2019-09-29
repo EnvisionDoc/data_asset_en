@@ -57,7 +57,7 @@ The goal of this guide is to get the sum of the raw data ingesting points *testA
 
 - Storage configuration: Configuring data storage policy for the 3 points (as either AI raw data or AI normalized data). For more information, see [Configuring TSDB Storage](../configuring_tsdb_storage).
 
-- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](/docs/device-connection/en/2.0.9/quickstart/gettingstarted_device_connection.html).
+- Data ingestion: For information about data ingestion of input points *testA_raw* and *testB_raw*, see [Device Connection](/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html).
 
 ## Step 1. Develop a Multi-Point Data Processing Job
 

@@ -42,7 +42,7 @@ The goal of this guide is to mark the AI type measuring point *test_raw* with qu
      - Ensure that the both the input point and output point are of AI type.
 
 
-- Data connection: See [Device Connection](/docs/device-connection/en/2.0.9/quickstart/gettingstarted_device_connection.html) to complete the data ingestion for the *test_raw* measuring point.
+- Data connection: See [Device Connection](/docs/device-connection/en/latest/quickstart/gettingstarted_device_connection.html) to complete the data ingestion for the *test_raw* measuring point.
 
 
 ## Procedure

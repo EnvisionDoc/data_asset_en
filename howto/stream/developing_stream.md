@@ -57,4 +57,4 @@ After the configuration of stream data processing policy is completed, you can m
 
 .. image:: ../media/config_stream.png
 
-After the stream processing job is published online, you can start it on the **Stream Operation** page. Before that, ensure that computing resources have been allocated for your organization. To request computing resources, see [Requesting Resources](/docs/enos/en/2.0.9/resourcemanagement/getstarted.html).
+After the stream processing job is published online, you can start it on the **Stream Operation** page. Before that, ensure that computing resources have been allocated for your organization. To request computing resources, see [Requesting Resources](/docs/enos/en/latest/resourcemanagement/getstarted.html).
