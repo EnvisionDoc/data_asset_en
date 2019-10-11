@@ -26,7 +26,7 @@ The computation models of stream computing are “event triggered”. The trigge
 
 **Stream and real-time data integration**
 
-The result of stream computing triggered by stream data is recorded directly into the destination data storage. For example, the data can be directly written into the relational database (RDS) for report rendering. Therefore, the computing results of the stream data are continuously recorded into the target data storage.
+The result of stream computing triggered by stream data is recorded continuously into the destination data storage, based on the configured data storage policies.
 
 ## Data Processing Flow
 
