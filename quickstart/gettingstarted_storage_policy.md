@@ -6,6 +6,7 @@ This guide introduces how to quickly configure TSDB data storage and retrieve th
 
 - Access permission to the Storage Policy module of the Time Series Data service.
 - Device connection is completed, and the devices are uploading data to EnOS.
+- Your OU has requested TSDB resoruce through Resource Management.
 
 ## About This Task
 
@@ -42,7 +43,11 @@ The steps for configuring data storage policies and retrieving stored data are a
 
 ### Step 1. Create a Storage Policy Group
 
-Log in EnOS Console and select **Time Series Data > Storage Policy**. Click **New Group** to create a storage policy group. Enter the group name, select a group model (select *test_Model* for this guide), and click **OK** to save the storage group configuration.
+If no storage policy group is created, take the following steps to create a storage policy group and associate the *test_Model* with the storage policy group:
+
+1. Log in EnOS Console and select **Time Series Data > Storage Policy**.
+2. Click **New Group**, enter the group name, search and select the models (*test_Model* for this guide) to be associated with the storage policy group.
+3. Click **OK** to save the storage policy group configuration.
 
 ### Step 2. Configure Storage Policy
 

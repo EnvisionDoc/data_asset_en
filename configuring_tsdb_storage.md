@@ -15,6 +15,7 @@ AI (analogy input) data consists of physical parameters like temperature, pressu
 Features of the AI Raw Data storage type are as follows:
 
 .. list-table::
+   :widths: 30 70
 
    * - Feature
      - Description
@@ -49,6 +50,7 @@ As described in the above section, the second-level raw data is usually normaliz
 Features of the AI Normalized Data storage type are as follows:
 
 .. list-table::
+   :widths: 30 70
 
    * - Feature
      - Description
@@ -77,6 +79,7 @@ DI (digital Input) data is usually used for recording device status. For example
 Features of the DI Data storage type are as follows:
 
 .. list-table::
+   :widths: 30 70
 
    * - Feature
      - Description
@@ -101,6 +104,7 @@ PI (pulse input) data is usually used for power meter readings. For PI data, EnO
 Features of the PI Data storage type are as follows:
 
 .. list-table::
+   :widths: 30 70
 
    * - Feature
      - Description
@@ -125,6 +129,7 @@ When configuring device models, you can choose AI, DI, PI, or Generic as the dat
 Features of the Generic Data storage type are as follows:
 
 .. list-table::
+   :widths: 30 70
 
    * - Feature
      - Description
