@@ -1,14 +1,11 @@
 ﻿Developing Stream Processing Jobs
-=========================
+========================================
 
-Use the data processing templates that are provided by EnOS stream processing engine to quickly create stream processing jobs. 
+You can use the stream data processing templates that are provided by the EnOS Stream Processing Service to quickly create stream processing jobs.
 
 .. toctree::
    :maxdepth: 1
 
-   ai_template_overview
-   multi_point_overview
-   pi_template_overview  
    ../../quickstart/gettingstarted_ai
    ../../quickstart/gettingstarted_multi_point
    creating_job

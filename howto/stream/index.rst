@@ -1,8 +1,7 @@
-﻿Stream Data Processing
-===================================
+﻿Stream Processing (Old Version)
+===============================================
 
-EnOS Stream Analytics targets to meet the real-time data processing requirements of devices and assets, and also the requirements of processing data that is integrated from the offline message channel. 
-
+This is the old version of the Stream Processing Service, which will be deprecated soon. Please use the new version of `Stream Processing Service <../streaming/index>`_.
 
 .. toctree::
    :maxdepth: 1
@@ -18,10 +17,3 @@ EnOS Stream Analytics targets to meet the real-time data processing requirements
    dev
    streamsets
    ops
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
-
-   reference

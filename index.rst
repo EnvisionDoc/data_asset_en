@@ -1,5 +1,5 @@
-﻿Data Asset Management
-======================
+﻿Enterprise Data Platform
+===========================
 
 .. toctree::
    :maxdepth: 2
@@ -19,12 +19,19 @@
    :maxdepth: 2
    :caption: How-to's
 
-   howto/stream/index
-   howto/storage/index
-   howto/quality/index
    howto/metadata/index
+   howto/federation/index
+   howto/storage/index
+   howto/streaming/index
+   howto/stream/index
    howto/obtain/index
    howto/archive/index
+   howto/data_integration/index
+   howto/data_ide/index
+   howto/quality/index
+   howto/data_source/index
+   howto/permission/index
+
 
 
 .. toctree::
@@ -33,7 +40,9 @@
 
    tutorial/subscribing_to_device_data/index
    tutorial/getting_tsdb_data/index
-
+   tutorial/developing_with_streamsets_operators/index
+   tutorial/integrating_external_data_sources/index
+   tutorial/writing_data_to_tsdb_with_python/index
 
 .. toctree::
    :maxdepth: 1
@@ -45,3 +54,14 @@
    reference/data_subscription_sdk
    reference/archive_storage
    reference/streamsets/index
+   reference/common_library
+   reference/system_variables
+   reference/sql_samples
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: FAQ
+
+   faq/edp_faq
+   faq/stream_operation_faq

@@ -1,25 +1,31 @@
-# Improving Data Quality
-If the data quality is not good enough to meet the business requirements, you can find out potential problems, troubleshoot, and improve data quality by the following ways.
+# Improving the Data Quality
 
-## Checking Device Running Status
-Ensure that your devices are running normally and that measuring point data is being uploaded to the cloud:
-- On the **Device Management > Device** page, check if the device status is `Online`. 
-- On the **Time Series Data > Data Insights** page, check if the latest data of measuring points has been uploaded.
+<br />
 
-If the device status is `Offline` and measuring point data is not uploaded, check the device running status and the network connection.
+If the data quality is not good enough to meet the business requirements, you can find the potential problems, troubleshoot, and improve data quality via the following ways.
+
+## Checking the Device Running Status
+To see whether your devices are running normally and the measurement point data is being uploaded to the cloud, do the following.
+- On the **Asset Management > Device Asset** page, check if the device status is `Online`.
+- On the **Time Series Data Management > Data Insights** page, check if the latest data of the measurement point has been uploaded.
+
+<br />
+
+If the device status is `Offline` and the measurement point data is not uploaded, check the device running status and the network connection.
 
 ## Checking the Configuration of TSDB Storage Policy
 
-Ensure that TSDB storage policy has been configured for the measuring points or that the configuration is not changed by other users.
+To see whether the TSDB storage policy has been configured for the measurement points or the configuration has been changed by other users, do the following.
 
-- On the **Time Series Data > Storage Policy** page, check the storage policy configuration for models and measuring points (storage type and time). 
-- On the **Time Series Data > Data Insights** page, test querying data of the measuring points.
+- On the **Time Series Data Management > Storage Policy** page, check the storage policy configuration for models and measurement points (storage type and time).
+- On the **Time Series Data Management > Data Insights** page, test query the data of the measurement points.
 
 ## Checking the Status of Stream Processing Jobs
 
-Ensure that the StreamSets pipelines for data quality tagging are running normally.
+To see whether the StreamSets pipelines for data quality tagging are running normally, do the following.
 
-On the **Stream Data Processing > StreamSets** page, check the running status and processed records (input data and output data) of the data quality tagging pipelines.
+<br />
+
+On the **Stream Processing > StreamSets** page, check the running status and processed records (input data and output data) of the data quality tagging pipelines.
 
 <!--end-->
-

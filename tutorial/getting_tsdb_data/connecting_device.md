@@ -1,10 +1,12 @@
-# Unit 3: Registering and Connecting Device into EnOS
+# Unit 3: Registering and Connecting the Device to EnOS
 
-After your device model is created and data storage policy is configured based on the device model, you can start to register the electric meter on the EnOS Console and perform device-end development so that the device connects to EnOS Cloud and transmits data with EnOS.
+<br />
 
-## Create a product for the electric meter
+After your device model is created and the data storage policy is configured based on the device model, you can register the electric meter in the EnOS Management Console and perform device-end development so that the device can connect to EnOS Cloud and start to transmit data.
 
-Create a product with the following basic settings:
+## Create a Product for the Electric Meter
+
+Create a product with the basic settings below.
 
 - **Product Name**: SmartElectricMeter
 - **Asset Type**: Device
@@ -13,19 +15,19 @@ Create a product with the following basic settings:
 - **Certificate-Based Authentication**: Disabled
 - **Description**: Smart Electric Meter
 
-## Register the electric meter device
+## Register the Electric Meter Device
 
-Create a smart electric meter device with the following basic settings:
+Create a smart electric meter device with the basic settings below.
 
 - **Product**: SmartElectricMeter
 - **Device Name**: Meter01
-- **Use DST**: No
-- **Time Zone/City**: UTC+08:00
 - **Device Key**: Optional (it can be generated automatically by the system)
+- **Time Zone/City**: UTC+08:00
+- **Use DST**: No
 
-## Perform device-end development and initialize connection
+## Perform Device-end Development and Initialize Connection
 
-The [Connecting a Simulated Device into EnOS](/docs/device-connection/en/latest/tutorial/connecting_device_simulated/index.html) tutorial describes detailed steps for how to perform device-end development. You can follow the same steps to connect the smart electric meter into EnOS for this tutorial.
+The [Connecting a Simulated Device to EnOS](/docs/device-connection/en/dev/tutorial/connecting_device_simulated/index.html) tutorial shows the steps for how to perform device-end development. You can follow the same steps to connect the smart electric meter to EnOS for this tutorial.
 
 ## Next Unit
 

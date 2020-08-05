@@ -1,7 +1,9 @@
-﻿Obtaining Data
+﻿Data Subscription
 =======================
 
-EnOS Data Asset Management service supports subscribing to asset real-time data and alert data and pushing the subscribed data to applications, thus improving the data query efficiency of applications.
+The EnOS Enterprise Data Platform enables you to subscribe to asset time series data (both real-time data and history data), asset alert data, and asset event data, and push the subscribed data to applications, thus improving the data query efficiency of applications.
+
+|
 
 .. toctree::
    :maxdepth: 1

@@ -1,23 +1,31 @@
 # Data Quality Overview
-Data has become a new type of important asset that Internet enterprises rely on. Data quality is directly related to the accuracy of information and also the survival and competitiveness of an enterprise.
 
-Data quality management refers to a set of processing guidelines for measuring, improving, and verifying data quality as well as integrating organizational data. The IoT data is featured by large volume, high speed, and diversity so that the data processing required to ensure the quality of IoT big data is different from the quality management ways as stated in the traditional data management plans.
+<br />
+
+Data has become a new type of important asset that Internet enterprises rely on and the quality of the data is directly related to the accuracy of information and also the survival and competitiveness of an enterprise.
+
+<br />
+
+Data quality management refers to a set of processing guidelines for measuring, improving, and verifying data quality as well as integrating organizational data. The characteristics of the large volume, fast speed, and diversity of IoT data determine the processing requirements for the quality of IoT big data, which is different from the quality management methods of traditional data management.
 
 ## Data Quality Assessment Dimensions
-Currently, EnOS supports the following data quality assessment dimensions:
+Currently, EnOS supports the following data quality assessment dimensions.
+
 - Completeness
 
-  Data is complete and dose not miss any information. For example, the personnel information data should completely cover gender, age, and the measuring point data of the day should be fully uploaded.
+  Data is complete and no information is missed. For example, the personnel information data should completely cover gender, age, and the measurement point data of the day should be fully uploaded.
 
 - Accuracy
 
-  Data is accurate and reasonable. For example, the personnel age information should be within a reasonable range.
+  Data is accurate and acceptable. For example, the age of the personnel should be within an acceptable range.
 
 - Timeliness
 
-  Data is uploaded to the cloud in time with no latency.
+  Data is uploaded to the cloud with no latency.
 
-For a detailed description of the data quality dimensions and a review of the data quality report, see [Managing Data Quality](../howto/quality/managing_data_quality).
+<br />
+
+For a detailed description of the data quality dimensions and review the data quality report, see [Viewing the Data Quality Report](../howto/quality/managing_data_quality).
 
 ## Product Advantages
 
@@ -25,4 +33,4 @@ For a detailed description of the data quality dimensions and a review of the da
 - Visualized data quality report query
 
 ## Usage Limit
-- Data quality rules are set by configuring relevant stages in stream data processing jobs.
+The data quality rules are set by configuring the relevant stages in the stream data processing jobs.

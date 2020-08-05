@@ -1,52 +1,96 @@
 # Developing Data Subscription Jobs
-EnOS System provides data subscription service to improve the API calling efficiency of applications with active push of subscribed data, which supports subscription to real-time asset data, asset alert data, and asset meta data. Benefiting from the data subscription service, applications do not need to call APIs repeatedly and frequently to get asset data. Instead, applications can call APIs only when there are pushed data, thus improving API calling efficiency and reducing costs.
 
+<br />
 
+The EnOS Data Asset Management provides the Data Subscription Service to improve the performance of API calls with the active push of subscribed data, which supports the subscription of asset time series data, asset alert data, and asset event data. With this service, applications do not need to call APIs repeatedly and frequently to get asset data. Instead, applications can call APIs only when there is pushed data, thus improving API call performance and reducing costs.
 
 ## Data Subscription Workflow
+
 .. image:: ../../media/data_subscription_process.png
 
 ## Creating a Subscription Job
-Take the following steps to create a data subscription job:
 
-1. Log in EnOS Console and select the **Data Subscription** module. On the **Data Subscription** page, click the **New Subscription** button to open the subscription configuration page.
+1. Log in to the **EnOS Management Console** and select the **Data Subscription** module. On the **Data Subscription** page, click the **New Subscription** button to open the subscription configuration page.
 
-   .. note:: An organization can have at most 5 data subscription jobs.
+   .. note:: An organization can have at most 15 data subscription jobs.
 
-2. Select the data subscription type, which determines the data source to be subscribed to. The subscription configuration for data sources is different. EnOS data subscription service supports the following data sources:
+   <br />
 
-   - **Real-time data**: Real-time telemetry of asset measuring points uploaded to the cloud with time stamp.
-   - **Alert data**: Alert data are generated according to specific alert rules defined for real-time data.
+2. Select the data subscription type, which determines the data source to be subscribed to. EnOS data subscription service supports the following data sources:
+
+   - **Time Series Data**: Time series data that is ingested from assets or generated after calculation (including real-time and offline data).
+   - **Alert Data**: Alert data is generated according to specific alert rules defined for real-time data.
+   - |update| **Event Data**: Event data is about events happened within the EnOS IoT Hub service, such as device registration, deletion, topology relationship changes, OTA firmware upgrade, etc.
+
+   <br />
 
 3. In the **ID** field, enter an ID for the subscription job or click **Generate** to use the system-generated ID. The subscription ID is a mandatory parameter for consuming subscribed data.
 
-4. From the **SA** drop down list, select the SA (service account) that is used for client and data authentication. Each subscription topic must has an associated SA. The system will detect the validity of the service account dynamically. When a service account is deleted, the data subscription configuration will be automatically disabled.
+4. From the **SA** drop down list, select the SA (service account) that is used for client and data authentication. Each subscription topic must have an associated SA and the system will detect the validity of the SA dynamically. When an SA is deleted, the data subscription configuration will be automatically disabled.
 
-   .. note:: The SA account associated with the data subscription job must be authorized to access the asset data. Otherwise, the data subscription job will fail because of authentication failure. For more information about authorizing the SA account, see [Managing Service Accounts](/docs/enos/en/latest/iam/howto/service_account/managing_service_account.html). 
+   .. note:: The SA account associated with the data subscription job must be authorized to access the asset data. Otherwise, the data subscription job will fail because of authentication failure. For more information about authorizing the SA account, see [Managing Service Accounts](/docs/enos/en/dev/iam/howto/service_account/managing_service_account.html).
 
-5. In the **Description** field, enter a short description for the subscription job.
+   <br />
 
-6. For the **Clients** section, choose the clients whose data are to be subscribed to based on the data access permission of the selected SA (associated with purchased application).
+5. For time series data subscription job, select the message channel of the data to be subscribed to:
 
-   .. note:: When a client revokes the data access authorization of a service account, the related subscription to the client's data will be stopped automatically.
+   - **Real-Time** message channel: Subscribes to real-time data that is ingested from devices or generated by the stream processing engine.
+   - **Offline** message channel: Subscribes to history data that is integrated from the offline message channel.
 
-7. Complete the data filtering configurations for real-time data subscription and alert data subscription separately:
+   <br />
 
-   - For **Real-time data** subscription: Filtering data by model and measuring points (subscribing to data of specific measuring points) and optionally by device tags (subscribing to data of specific devices).
-   - For **Alert data** subscription: Filtering data by models (subscribing to alert data of specific model) and optionally by device tags or asset tree tags (subscribing to data of specific devices or asset trees).
+6. In the **Description** field, enter a short description of the data subscription job.
 
-8. Click **Save** to save the data subscription configuration.
+7. For the **Clients** section, choose the clients whose data you want to subscribe to based on the data access permission of the selected SA (associated with purchased applications).
 
-.. note:: When a subscribed data source (model or measuring point) is deleted, the system will keep the data subscription configuration, but an error message will be displayed, reporting that the configured data source is an unknown object.
+   .. note:: When a client revokes the data access authorization of an SA, the related subscription to the client's data will be stopped automatically.
 
+   .. image:: ../../media/data_subscription_job.png
 
+   <br />
+
+8. For Time Series Data Subscription, complete the following data filtering configurations:
+
+   - By models and measurement points: (subscribing to the real-time data of specific measurement points)
+   - Optionally by device tags: (subscribing to the real-time data of specific devices)
+
+   .. image:: ../../media/data_subscription_job_realtime.png
+
+   <br />
+
+9. For Alert Data Subscription, complete the following data filtering configurations:
+
+   - By models and measurement points: (subscribing to the alert data of specific measurement points)
+   - Optionally by device tags: (subscribing to the alert data of specific devices)
+   - Optionally by asset tree tags (subscribing to the alert data of specific asset trees)
+
+   .. image:: ../../media/data_subscription_job_alert.png
+
+   <br />
+
+10. |update| For Event Data Subscription, complete the following data filtering configurations:
+
+   - By event types: (subscribing to specific types of events)
+   - Optionally by device tags: (subscribing to the event data of specific devices)
+
+   .. image:: ../../media/data_subscription_job_event.png
+
+   <br />
+
+11. Click **Save** to save the data subscription configuration.
+
+.. note:: When a subscribed data source (model or measurement point) is deleted, the system will keep the data subscription configuration, but an error message will be displayed, reporting that the configured data source is an unknown object.
 
 ## Enabling the Subscription Job
 
 After the subscription job is configured, find the saved topic on the **Data Subscription** page, and click the **Enable** icon to run the subscription job. The data producer will start writing data to the topic.
 
 
-
 ## Deleting the Subscription Job
 
 You can choose to delete a subscription job on the **Data Subscription** page. Note that jobs in running status cannot be deleted and that deleted jobs cannot be restored.
+
+.. |update| image:: ../../media/2_1_update.png
+   :width: 80px
+
+<!--end-->

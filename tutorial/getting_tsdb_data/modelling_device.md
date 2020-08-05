@@ -1,6 +1,8 @@
 # Unit 1: Modelling the Device
 
-Create a model for the electric meter with the following basic settings:
+<br />
+
+Create a model with the basic settings below.
 
 - **Identifier**: ElectricMeter
 - **Model Name**: ElectricMeter
@@ -9,42 +11,41 @@ Create a model for the electric meter with the following basic settings:
 - **Source Model**: NA
 - **Description**: Model for electric meter
 
+<br />
 
-
-Define the measuring points for the model:
-
-
+Define the measurement points for the model.
 
 .. list-table::
    :widths: auto
+   :header-rows: 1
 
    * - Feature Type
      - Name   
      - Identifier   
      - Point Type
      - Description   
-   * - Measuring Point
+   * - Measurement Point
      - Reading
      - Reading
      - AI
-     - Original meter reading data
-   * - Measuring Point
+     - The original meter reading data.
+   * - Measurement Point
      - MaxReading10Min
      - MaxReading10Min
      - AI
-     - Maximum reading data in 10 minutes
-   * - Measuring Point
+     - The maximum reading data in 10 minutes.
+   * - Measurement Point
      - MinReading10Min
      - MinReading10Min
      - AI
-     - Minimum reading data in 10 minutes
-   * - Measuring Point
+     - The minimum reading data in 10 minutes.
+   * - Measurement Point
      - ReadingDifference
      - ReadingDifference
      - AI
-     - Difference between the maximum data and minimum data
+     - The difference between the maximum data and minimum data.
 
-
+<br />
 
 See the following example:
 
@@ -54,4 +55,4 @@ See the following example:
 
 ## Next Unit
 
-[Configuring Storage Policy for the Device Data](configuring_storage_policy)
+[Configuring the Storage Policy for the Device Data](configuring_storage_policy)

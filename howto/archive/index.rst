@@ -1,4 +1,4 @@
-﻿Archiving Data
+﻿Data Archiving
 =======================
 
 .. toctree::

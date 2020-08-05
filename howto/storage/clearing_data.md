@@ -1,47 +1,57 @@
-# Cleaning up Stored Data
+# Deleting Data in TSDB
 
-EnOS Time Series Data Management supports cleaning up historical data (wrong data, informal data, or useless business data) that is stored in TSDB for releasing storage resource and saving data storage costs. With the Data Cleanup feature, you can delete data of specified models, measuring points, and assets in specified time range. 
+<br />
 
-.. note:: Deleted data by Data Cleanup jobs cannot be restored. You must ensure that the specified data is eligible to be deleted to avoid risk of data loss.
+The EnOS Time Series Data Management supports the cleaning of the historical data (wrong data, informal data, or business data that is no longer needed) of assets that is stored in TSDB to release storage resource and reduce data storage costs. With the Data Deletion feature, you can delete the data of specific models, measurement points, and assets in the specified time range.
 
-## About This Task
+.. note:: Deleted data by data deletion jobs cannot be restored. You need to ensure that the specified data can be deleted to avoid data loss.
 
-This article describes how to clean up historical data stored in TSDB and view data cleanup records.
+<br />
+
+This section shows how to delete historical data stored in TSDB and view the data deletion records.
 
 ## Before You Start
 
-Determine the model, measuring point, assets, and time range of the data to be deleted.
+Determine the model, measurement points, assets, and time range of the data to be deleted.
 
 ## Procedure
 
-1. Log in EnOS Console, select **Time Series Data > Data Cleanup**, and complete the data query conditions.
+1. Log in to the **EnOS Management Console**, select **Time Series Data Management > Data Deletion**, and fill in the following under the **Data in TSDB** tab.
 
-2. **Time**: Select the time range of the data to be deleted (by date and hours).
+   - **Time**: Select the time range of the data to be deleted (by date and hours).
 
-3. **Model**: Search for and select the model to which the data belongs to.
+   - **Model**: Search for and select the model to which the data belongs to.
 
-4. **Point**: Search for and select the measuring point to which the data belongs to.
+   - **Point**: Search for and select the measurement point to which the data belongs to.
 
-5. **Asset**: Select one or multiple assets to which the data belongs to.
+   - **Asset**: Select one or multiple assets to which the data belongs to.
 
-6. Click the **Clean Up** button, and the system will start deleting data based on the specified conditions.
+   <br />
+
+2. Click the **Delete** button, and the system will start deleting data based on the specified conditions.
 
   .. image:: ../../media/data_cleanup.png
 
-.. note:: Once submitted, the data cleanup job cannot be canceled. Please operate with caution.
+.. note:: Once submitted, the data deletion job cannot be cancelled, and the data cannot be restored once deleted.
 
-## Result
+## Results
 
-Submitted data cleanup job will be displayed in the **Cleanup Record** table.
+The data deletion job will be displayed in the **Deletion Record** table.
 
-1. Check the configuration details and status of the submitted data cleanup job.
+1. Check the configuration details and status of the data deletion job.
 
    .. image:: ../../media/data_cleanup_status.png
 
-2. Click the **View** icon in the **Operations** column to view the data cleanup details.
+   <br />
+
+2. Click the **Detail** icon in the deletion record table to view the data deletion details.
 
    .. image:: ../../media/data_cleanup_details.png
 
-## What to Do Next
+   <br />
 
-To verify the data cleanup result, go to **Time Series Data > Data Insights**, configure the corresponding data query conditions to check if data is cleaned up already.
+3. If the data deletion job failed, click the **Restart** icon in the deletion record table to restart the job. Note that deleted data cannot be restored.
+
+## Next Step
+
+You can check and verify whether the data has been deleted on the **Time Series Data Management > Data Insights** page.

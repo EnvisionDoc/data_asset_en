@@ -1,25 +1,35 @@
 # Data Insights Overview
 
-Through the data insights service, data charts based on time range and device measuring points can be generated for the time series data stored in TSDB, thereby improving the efficiency of data analysis.
+<br />
 
-Features of the data insights service are as follows:
+Through the data insights service, data charts based on time range and device measurement points can be generated for the time series data stored in TSDB to improve the efficiency of data analysis. The service has the following features.
 
-**Querying data by time range**
+<br />
 
-Querying and presenting data by the specified time range based on the data event time. You can choose to query data for 1 hour, 1 day, or 1 week, or customize the time range for querying data.
+**Querying Data by Time Range**
 
-**Supporting multiple devices and measuring points**
+Data can be queried and presented by the specified time range based on the data event time. You can choose to query data for 1 hour, 1 day, or 1 week, or customize your own time range.
 
-Supporting simultaneous query and presentation of data from multiple devices and multiple measuring points, and dynamically displaying the queried data in a chart for the selected devices and measuring points.
+<br />
 
-**Presenting data by measuring point type**
+**Supporting Multiple Devices and Measurement Points**
 
-You can specify to query and present data by measuring point types. The selectable measuring points are dynamically displayed as per the selected measuring point type (AI, DI, PI and All).
+Supports the simultaneous query and presentation of data from multiple devices and multiple measurement points and dynamically displays the queried data in a chart for the selected devices and measurement points.
 
-**Aggregating data**
+<br />
+
+**Presenting Data bMeasurement Point Type**
+
+You can query and present data by measurement point types. The measurement points that can be selected are dynamically displayed based on the measurement point type (AI, DI, PI, and Generic).
+
+<br />
+
+**Aggregating Data**
 
 Data can be aggregated and presented by the built-in aggregation functions. The supported aggregate functions include count, sum, avg, max, min, first, and last, and the aggregation interval options are 5 minutes, 10 minutes, 15 minutes, 30 minutes, and 1 hour.
 
-**Data visualization**
+<br />
 
-For the data that is queried, you can choose to display it in the form of a chart or a list. If you choose to view the data in a chart, you can zoom in and out on the chart to see the details of each data point.
+**Data Visualization**
+
+For the data that is queried, you can choose to display it in the form of a chart or a list. If you choose to view the data in a chart, you can zoom in and out to see the details of each data point.

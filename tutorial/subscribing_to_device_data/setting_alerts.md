@@ -1,20 +1,24 @@
 # Unit 2: Configuring Alert Settings and Simulating Data Transmission
 
-After the smart electric meter is registered on EnOS Console, you can connect the device and report simulated device data to EnOS Cloud. After that, configure alert settings to monitor the temperature value of the smart meter.
+<br />
 
-## Step 1: Configuring alert settings
+After the smart electric meter is registered on the EnOS Management Console, you can connect the device and report simulated device data to EnOS Cloud. Subsequently, you can configure alerts to monitor the temperature value of the smart meter.
 
-The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for configuring alert settings for a device. Follow the same steps to configure alert setting for the temperature value of the smart electric meter.
+## Step 1: Configuring Alert Settings
 
-See the following example:
+The [Connecting a Simulated Device into EnOS](/docs/device-connection/en/dev/tutorial/connecting_device_simulated/index) tutorial describes detailed steps for configuring alert settings for a device. Follow the same steps to configure alert setting for the temperature value of the smart electric meter.
+
+<br />
 
 .. image:: media/alert_rule.png
 
-When the alert rule is saved, it will be running to monitor the temperature value of the electric meter. As soon as the temperature data is connected and exceeds the specified limit, the alert rule will be triggered, and an alert record will be generated.
+<br />
 
-## Simulating device data
+When the alert rule is saved, it will run and monitor the temperature value of the electric meter. As soon as the temperature data exceeds the specified limit, the alert rule will be triggered, and an alert record will be generated.
 
-The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for connecting a smart device into EnOS and simulating device data with the Device SDK for MQTT. Follow the same steps to report simulated temperature data of the electric meter to EnOS Cloud. The following code sample is for your reference:
+## Simulating Device Data
+
+The [Connecting a Smart Device to EnOS](/docs/device-connection/en/dev/quickstart/gettingstarted_device_connection) section shows the steps for connecting a smart device to EnOS and simulating device data with the Device SDK for MQTT. Follow the same steps to report the simulated temperature data of the electric meter to EnOS Cloud. The following code sample is for your reference:
 
 ```java
 import com.envisioniot.enos.iot_mqtt_sdk.core.IConnectCallback;
@@ -95,23 +99,29 @@ public class demo1 {
 }
 ```
 
+<br />
+
 In this example:
 
-- The variables `HOST` and `PORT` of the EnOS server vary with the cloud region and instance. For private cloud instances, contact your Envision project manager or support representative to get the host and port information.
-- The variables `productKey`, `deviceKey`, and `deviceSecret` are the triple attributes of the registered *Demo_meter* device, which can be found on the EnOS Console.
-- Randomly simulated values of the *Temperature* measuring point will be uploaded to EnOS Cloud every 10 seconds.
+- The variables `HOST` and `PORT` of the EnOS server will vary with the cloud region and instance. For private cloud instances, contact your Envision project manager or support representative to get the host and port information.
+- The variables `productKey`, `deviceKey`, and `deviceSecret` are the triple attributes of the registered *Demo_meter* device, which can be found on the **EnOS Management Console**.
+- Randomly simulated values of the *Temperature* measurement point will be uploaded to EnOS Cloud every 10 seconds.
 
-When the device is connected, check the device status through the **Device Management >  Device** page:
+<br />
+
+When the device is connected, you can check the device status through the **Asset Management > Device Asset** page.
 
 .. image:: media/device_state.png
 
-When simulated data is being uploaded to EnOS Cloud, view the uploaded data on the **Device Details** page:
+<br />
+
+When simulated data is uploaded to EnOS Cloud, you can view the uploaded data on the **Device Details** page.
 
 .. image:: media/simulated_data.png
 
 
 ## Next Unit
 
-[Configuring Data Subscription](configuring_subscription)
+[Configuring Data Subscription Jobs](configuring_subscription)
 
 <!--end-->

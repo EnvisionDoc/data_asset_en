@@ -1,9 +1,26 @@
-﻿Data Asset Explorer
-=======================
-The Data Asset Explorer supports querying the metadata information of asset measuring points, including basic information, stream processing lineage, TSDB storage configuration, and instance list.
+﻿Data Asset Catalog (Preview)
+==============================
+
+.. note:: This service/feature is in preview mode. Therefore, the documentation is not complete at the time of writing and may be subjected to changes. If you are interested in this new service/feature and would like to try it out, please fill in the `Contact Us <https://developer.envisioniot.com/contactus/>`_ form. We will reply to you shortly. Thank you.
+
+|
 
 .. toctree::
    :maxdepth: 1
+   :caption: Overview
 
    ../../learn/metadata_explorer
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: How-to's
+
    exploring_metadata
+   asset_metadata
+   hive_table_metadata
+   service_metadata
+   file_template_metadata
+   tag_template_metadata
+   fileset_metadata
+   dtv_service_metadata

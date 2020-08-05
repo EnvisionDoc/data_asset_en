@@ -1,7 +1,7 @@
 ﻿Reference
 =======================
 
-See the following reference for time window, multi-point merging expression syntax, and electric power calculation logic.
+This section contains the references for the time window, multi-point merging expression syntax, and electric power calculation logic.
 
 .. toctree::
    :maxdepth: 1

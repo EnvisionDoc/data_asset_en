@@ -4,15 +4,19 @@
 
 In this tutorial, connect a smart electric meter to EnOS and ingest data to the IoT hub. Then, configure and enable data subscription jobs to subscribe the real-time temperature data and alert records of the smart meter. When the data subscription jobs are enabled, program with EnOS SDK to get the subscribed data. In this way, the real-time device data and alert records can be consumed by your application in a timely manner.
 
-The scenario is depicted in the following chart:
+<br />
+
+The scenario is depicted in the following chart.
 
 .. image:: media/connect_alert_subscribe.png
+
+<br />
 
 This tutorial walks you through a typical path of using the data subscription service of EnOS to subscribe to your device real-time data, which is:
 
 - Registering and connecting a smart electric meter to EnOS Cloud
 - Simulating temperature data of the smart meter and configuring alerts to monitor the temperature
-- Configuring data subscription jobs on EnOS Console
+- Configuring data subscription jobs on EnOS Management Console
 - Getting the subscribed data by programming with EnOS SDK
 
 ### [Start >](registering_device)
